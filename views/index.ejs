@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>21 Savage Fans</title>
+  <title>Public Message Board</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>21 Savage</h1>
-  <h2>Why you trappin so hard?</h2>
+  <h1>Public Message Board</h1>
+  <h2>Leave a Message Below!</h2>
 
+  <form action="/messages" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="message" name="msg">
+    <button type="submit">Submit</button>
+  </form>
 
   <h3>Messages</h3>
   <ul class="messages">
@@ -25,14 +35,6 @@
     </li>
   <% } %>
   </ul>
-
-  <h2>Add a message</h2>
-
-  <form action="/messages" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="message" name="msg">
-    <button type="submit">Submit</button>
-  </form>
 
   <script src="main.js"></script>
 
